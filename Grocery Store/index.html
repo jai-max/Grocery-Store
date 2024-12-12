@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Grocery Store</title>
+</style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Online Grocery Store</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Cart</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <section id="products">
+            <h2>Available Products</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 
+                        md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <div class="product">
+                    <img 
+                    src=
+                    "https://img.freepik.com/premium-photo/wooden-spoon-with-crystalline-erythritol-sugar_696657-7227.jpg"
+                     alt="Sugar">
+                    <h3>Sugar</h3>
+                    <p>$1/Kg</p>
+                    <button onclick="addToCart('Sugar', 2.00)">
+                          Add to Cart
+                      </button>
+                </div>
+                <div class="product">
+                    <img 
+                    src=
+"https://th.bing.com/th/id/OIP.HySrCJe7ATbkNjvwko8rwQHaIZ?rs=1&pid=ImgDetMain"
+                     alt="Apple">
+                    <h3>Apple</h3>
+                    <p>$5/Kg</p>
+                    <button onclick="addToCart('Apple', 5.00)">
+                          Add to Cart
+                      </button>
+                </div>
+                <div class="product">
+                    <img src=
+"https://th.bing.com/th/id/OIP.HSPUClNWEK7dfTSG_a7wpwHaE8?w=279&h=186&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Orange">
+                    <h3>Orange</h3>
+                    <p>$4/Kg</p>
+                    <button onclick="addToCart('Orange', 4.00)">
+                          Add to Cart
+                      </button>
+                </div>
+                <div class="product">
+                    <img src=
+"https://th.bing.com/th/id/OIP.Lwhup2_C-UkoR7CSrXdkHQAAAA?w=225&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                     alt="Oil">
+                    <h3>Oil</h3>
+                    <p>$2/L</p>
+                    <button onclick="addToCart('Oil', 8.00)">
+                          Add to Cart
+                      </button>
+                </div>
+                <div class="product">
+                    <img src=
+"https://dgroce.com/Company/Uploads/Products/10014/100024/2.jpg"
+                     alt="Urad">
+                    <h3>Urad</h3>
+                    <p>$2/Kg</p>
+                    <button onclick="addToCart('Urad', 8.00)">
+                          Add to Cart
+                      </button>
+                </div>
+                <div class="product">
+                    <img src=
+"https://www.foodchamps.org/wp-content/uploads/2022/02/Chickpeas.jpg"
+                     alt="Chickpeas">
+                    <h3>Chickpeas</h3>
+                    <p>$3/Kg</p>
+                    <button onclick="addToCart('Chickpeas', 8.00)">
+                          Add to Cart
+                      </button>
+                </div>
+            </div>
+        </section>
+        <aside id="cart">
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items">
+            </ul>
+            <button id="buy-button" onclick="checkout()">Buy</button>
+        </aside>
+    </div>
+    <script src="script.js"></script>
+    </body>
+    </html>
